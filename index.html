@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Netflix Landing Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg ">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="./Images/logo.jpeg" alt="Netflix Logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Movies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">TV Shows</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">News</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Popular</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">My List</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Browse by Languages</a>
+          </li>
+        </ul>
+        <div class="d-flex">
+          <div class="notification me-3">
+            <i class="fa fa-bell"></i>
+          </div>
+        </div>
+
+      </div>
+      <div class="profile">
+        <button class="btn dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          <img src="./Images/user.png" alt="User Profile">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+          <li><a class="dropdown-item" href="#">Manage Profiles</a></li>
+          <li><a class="dropdown-item" href="#">Transfer Profiles</a></li>
+          <li><a class="dropdown-item" href="#">Account</a></li>
+          <li><a class="dropdown-item" href="#">Help Centre</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <section>
+    <div class="video">
+      <video id="myVideo" src="./Videos/AS2.mp4" autoplay></video>
+      <img id="myImage" src="./Images/as2.png"></img>
+      <i class="fa-solid fa-play fa-xl" id="playButton" style="color: #000000; padding: 15px">&nbsp;Play</i>
+      <i class="fa-solid fa-info" id="thumbsButton" style="padding: 5px; padding-right: 15px">&nbsp;&nbsp;More Info</i>
+    </div>
+  </section>
+  <header>Trending Now</header>
+  <section class="movies-section">
+    <img
+      src="http://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABWxcZ5lmpu2RZWZRZdxBoV8BFuCQai1BvP5YpC1nC-Z9sr3h7so9TOG54j73KVkvnBZG7rYJoK2oDRq5n22G6c2Zqs4xKNkpTrg.jpg?r=e08"
+      alt="img" style="height: 150px;" title="Sir">
+    <img
+      src="http://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABZP7Ius4B4XUPtnFyy8Sgy9IbQ0Z29YhCarEq2HJtOCiI-AF7I7vj_knKdW1gosCXT2qMWzxT7WlUhnvmVuXmulvgymykauzcKVOVIpEjausBLV9hUWIvh_j5p0oLbI5ObrUherAF38TSAgMTiE7ORYHpOzZc5cxTW8.jpg?r=cbc"
+      title="Kannaii namathey" alt="img" style="height: 150px;">
+    <img
+      src="http://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYUySM84rHVbzln2eOQ45v6ZCZz27Vor7tVaVcWSYqjcjceQop6FOFHKwlTg-MaXT0-ZcjzsUB6ItkRXQu8HVlqBbKabSMBGZsY.jpg?r=a17"
+      alt="" style="height: 150px;" title="Valter Verayya">
+    <img
+      src="http://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABRpPIKv4FOuC_7BgyrHEMf7kVUYKBFsl12NjDL2ujFq4e0fZjMvX-qo9xX2anjPb4sGDwIqX6wuoZtTz7BWNdx35Jujp-LdiTmFIWJX-X-DpAzDNrEcMyJvP1yA7av-lFyeV3d8NPTVFVZqD2crK2We8mWIZAYTU4R5yF26Zlz6QlCxdhfZI2e0dSk6XGBg.jpg?r=7f3"
+      alt="img" title="Rana-Naidu" style="height: 150px;">
+    <img
+      src="http://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABc9f-PnTAa8g8gWh_bJRfw82nFpiWd57RRjgzSll-GzZ-2ymuqpK237MkORBA13tTCrYebiNurlhfnkZ2LlsP-5td-Y9ja7b8TY.jpg?r=0ba"
+      alt="img" title="Dhamaka" style="height: 150px;">
+    <img src="./Images/img/m6.PNG" alt="img" style="height: 150px;">
+    <img src="./Images/img/o1.PNG" alt="img" style="height: 150px;">
+    <img src="./Images/img/o2.PNG" alt="img" style="height: 150px;">
+  </section>
+  <header>Popular on Netflix</header>
+  <section class="movies-section">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABdOlaOMzduJQ6HMoFyIV4ZCkSuXiVTdjheLjx1WuTIoRmQPirqZtkQFu-evqAooHS1T6ECcYKP2T3vsVvssUvUNz6yDtszLGSJU.jpg?r=add"
+      alt="img" title="Beast" style="height: 150px;">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABS0DaEenmy7CH5ulaiFs-btLjl4KTOmBQLHTcnRHK201LtyDg_Wdiq0IyrvktB4iUq5-1ZoK72xgJdRRGqayJK0A1YUKpgDAFzY.jpg?r=e26"
+      alt="img" title="EE Nagaraniki Emaindi" style="height: 150px;">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABed-9wEYANJzgpdmduzr4iEObBtbw-O4NKoXYdE0trVX8k5NN9NmSDjrtUqHtMIR2nhfxq_fRnsEnvf1b7vgZl6TJIwIIhqHE3NszWfoZDdo-uT7P0-Qt0fbvAQEOzY2ga6p.jpg?r=c47"
+      alt="img" title="Squid Game" style="height: 150px;">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVRxvyTF6AhhfTnZw6R6COb2gnsXA74wSbOTWCMZ3t8u1rAzUSkqXLAlONjYO1HUPnbqerSzFbuQpxK0RKt9yfOjOl_FhHfyVxg.jpg?r=c78"
+      alt="img" title="Ante Sundaraniki" style="height: 150px;">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABanbbVuRJ2vO6qXLUgeMsoXKj001cJrMmPMJa98WRWOYHULloKi6XcY_DvcnyEQtxbL7Dyo3WMOK2maWe3-gvY0pGA_IMo9cyxE.jpg?r=777"
+      alt="img" title="Naruto" style="height: 150px;">
+    <img src="./Images/img/m2.PNG" alt="img" style="height: 150px;">
+    <img src="./Images/img/m3.PNG" alt="img" style="height: 150px;">
+    <img src="./Images/img/m4.PNG" alt="img" style="height: 150px;">
+  </section>
+  <header>Critically Acclaimed TV Shows</header>
+  <section class="movies-section">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABQiAZh-kUsfhvTz-LUZFyZ9bWEP7LAE7VN7KtRRH3ImZa0ocYqzJzPRgjpGRQTyz1-_sOUTjOWRDskhLjhCzwGieYfAABZZuTjonnoEVcHCPag3on-jB-cUPNnCxDUPQK8D2.jpg?r=400"
+      alt="img" title="Alice" style="height: 150px;">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABVVBefzzb0fZRln5fGdbTRgA36U6DGx_DREST_G13nc_wthS0FNli_QP-4VGIYiA5mUG2eHkpW3oy40Xnla9LBrejki0Dtx_LNx7-W_cxCgoV3nxqPCkuhelZNT__Oflm2Ae.jpg?r=31e"
+      alt="img" title="Lucifier" style="height: 150px;">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABfIqH0UArd_1NtaJkVtTAzZMerj7iE5x6EPBQ87t-8oWAXVn1QQTkRTFrsssLRQCHuy4u9ZgYCGBWNj0DbXYI5cDR4QhWoro7RU.jpg?r=d42"
+      alt="img" title="The 100" style="height: 150px;">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABSzp5CBL0WMn9Oo7m2BV7wrV7IKxXkhDzAlIY6zH0TUPmuV-j0sL4SKmZ28fP_wQ9KDanGeCiGKCeNaBqc1FrUMzeMJ2cto4EfISixLUwOIvsMu6YDjgqvssw4ieZ3TnZdzW-Hdd61ZLgeFOeyl0F9dn464KxF4x3LrWODL1HUdpMs9NFFieb5t8WYRo0ThUrvhVZ4zPeA1evEGWg8ndmD8jVb2tAZYGPszZytqy2dB0QU0BEaw5mCvY5CY7a5M_2AdR86JgMw3yOvY8ulUBTNE.jpg?r=27e"
+      alt="img" title="Demon Slayer" style="height: 150px;">
+    <img
+      src="https://occ-0-2663-2164.1.nflxso.net/dnm/api/v6/6gmvu2hxdfnQ55LZZjyzYR4kzGk/AAAABYuKjjKMzFh6RN2q7ml5nJDrNguQzImqCdD7tTYKKUXYnliwYVjasxzPERdiwpcDhL8zqUyaRHnRhYWtajxpwaRLf1FUTtHR7CGGFkn028rZF0CCpGfBAYA-e6H0DdaVUrdO.jpg?r=393"
+      title="Dark" style="height: 150px;">
+    <img src="./Images/img/m2.PNG" alt="img" style="height: 150px;">
+    <img src="./Images/img/m3.PNG" alt="img" style="height: 150px;">
+    <img src="./Images/img/m4.PNG" alt="img" style="height: 150px;">
+  </section>
+
+
+  <footer>
+    <div class="container">
+      <p>Netflix - Watch TV Shows & Movies Online | Stream Live</p>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
